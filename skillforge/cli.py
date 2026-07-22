@@ -9,9 +9,9 @@ Mirrors hermes-agent-self-evolution evolve_skill CLI exactly, plus:
   --all             Evolve ALL skills under skills-root in one invocation.
 
 Usage:
-    python -m agent_evolving.offline --skill my-skill --iterations 10
-    python -m agent_evolving.offline --all --min-improvement 0.05
-    python -m agent_evolving.offline.cli --skill my-skill --dry-run
+    python -m skillforge --skill my-skill --iterations 10
+    python -m skillforge --all --min-improvement 0.05
+    python -m skillforge --skill my-skill --dry-run
 """
 from __future__ import annotations
 

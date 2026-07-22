@@ -15,12 +15,12 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from examples.offline.sage.demo.helpers.stats import (
+from examples.benchmarks.demo.helpers.stats import (
     bootstrap_ci_diff,
     mean,
     std,
 )
-from examples.offline.sage.demo.trainings.results import (
+from examples.benchmarks.demo.trainings.results import (
     run_key_label,
     run_key_mode,
 )

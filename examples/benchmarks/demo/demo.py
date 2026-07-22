@@ -1,29 +1,29 @@
 from __future__ import annotations
 
-from examples.offline.sage.demo.io.reader_latest_evolved import read_latest_evolved
-from examples.offline.sage.demo.steps.steps_shared_object import \
+from examples.benchmarks.demo.io.reader_latest_evolved import read_latest_evolved
+from examples.benchmarks.demo.steps.steps_shared_object import \
     SharedEvolutionObjects
 from skillforge.evolvers._console_maker import _make_console
-from examples.offline.sage.demo.demo_config import DemoConfig
-from examples.offline.sage.demo.demo_params import DemoParams
-from examples.offline.sage.demo.trainings.trainings import DemoTrainings
-from examples.offline.sage.demo.trainings.results import (
+from examples.benchmarks.demo.demo_config import DemoConfig
+from examples.benchmarks.demo.demo_params import DemoParams
+from examples.benchmarks.demo.trainings.trainings import DemoTrainings
+from examples.benchmarks.demo.trainings.results import (
     DemoTrainingsResults,
     run_key_label,
 )
-from examples.offline.sage.demo.steps.step_00_write_demo_scenario_files import \
+from examples.benchmarks.demo.steps.step_00_write_demo_scenario_files import \
     run_step as step_00_write_demo_scenario_files
-from examples.offline.sage.demo.steps.step_01_build_skill_dataset_and_dspy import \
+from examples.benchmarks.demo.steps.step_01_build_skill_dataset_and_dspy import \
     run_step as step_01_build_skill_dataset_and_dspy
-from examples.offline.sage.demo.steps.step_02_evaluate_baseline import \
+from examples.benchmarks.demo.steps.step_02_evaluate_baseline import \
     run_step as step_02_evaluate_baseline
-from examples.offline.sage.demo.steps.step_07_results_comparison import \
+from examples.benchmarks.demo.steps.step_07_results_comparison import \
     run_step as step_07_results_comparison
-from examples.offline.sage.demo.steps.step_08_plot_results import \
+from examples.benchmarks.demo.steps.step_08_plot_results import \
     run_step as step_08_plot_results
-from examples.offline.sage.demo.steps.step_09_final_prints import \
+from examples.benchmarks.demo.steps.step_09_final_prints import \
     run_step as step_09_final_prints
-from examples.offline.sage.demo.helpers.printer_skill_diff import \
+from examples.benchmarks.demo.helpers.printer_skill_diff import \
     print_skill_diff
 
 

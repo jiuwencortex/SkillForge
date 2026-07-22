@@ -20,10 +20,10 @@ New CLI flags added to match Hermes evolve_skill CLI:
     Saves LLM cost when iterating on optimizer_model or iterations.
 
 python -m invocation (via __main__.py):
-    python -m agent_evolvings --skill git-review --dry-run
+    python -m skillforge --skill git-review --dry-run
 
 Usage:
-    python examples/agent_evolving_hermess/07_cli_dry_run_and_caching.py
+    python examples/other/offline_03_cli_dry_run_and_caching.py
 """
 from click.testing import CliRunner
 from skillforge.cli import main
@@ -74,7 +74,7 @@ def show_reuse_dataset_flag():
         "        metrics.json\n"
         "        evolved_skill.md\n\n"
         "CLI usage:\n"
-        "  python -m agent_evolvings \\\n"
+        "  python -m skillforge \\\n"
         "      --skill git-review \\\n"
         "      --iterations 20 \\\n"
         "      --reuse-dataset\n"
@@ -83,11 +83,11 @@ def show_reuse_dataset_flag():
 
 def show_python_m_invocation():
     """Show python -m usage."""
-    print("── python -m agent_evolvings ──────────────")
+    print("── python -m skillforge ──────────────")
     print("The package now has a __main__.py so you can invoke it directly:\n")
-    print("  python -m agent_evolvings --skill git-review --dry-run")
-    print("  python -m agent_evolvings --skill git-review --iterations 10")
-    print("  python -m agent_evolvings --help")
+    print("  python -m skillforge --skill git-review --dry-run")
+    print("  python -m skillforge --skill git-review --iterations 10")
+    print("  python -m skillforge --help")
     print()
 
 

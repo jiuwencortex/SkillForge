@@ -5,7 +5,7 @@ or any future client — calls `get_scenario(name)` and works with the same obje
 regardless of whether the data is local/static or fetched from HuggingFace.
 
 ```python
-from examples.offline.sage.data import get_scenario, list_scenarios, Scenario
+from examples.benchmarks.data import get_scenario, list_scenarios, Scenario
 ```
 
 ---
@@ -13,7 +13,7 @@ from examples.offline.sage.data import get_scenario, list_scenarios, Scenario
 ## Getting a scenario
 
 ```python
-from examples.offline.sage.data import get_scenario, list_scenarios
+from examples.benchmarks.data import get_scenario, list_scenarios
 
 scenario = get_scenario("paper-review")
 

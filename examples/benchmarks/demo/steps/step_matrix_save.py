@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from examples.offline.sage.analyze_scoring_matrix import (
+from examples.benchmarks.analyze_scoring_matrix import (
     analyze,
 )
 

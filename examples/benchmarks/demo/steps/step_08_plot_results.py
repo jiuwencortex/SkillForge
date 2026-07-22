@@ -32,7 +32,7 @@ def run_step(baseline_score_holistic: float,
         return
 
     # ── ASCII charts (terminal) ───────────────────────────────────────────
-    from examples.offline.sage.demo.helpers.ascii_plotter import (
+    from examples.benchmarks.demo.helpers.ascii_plotter import (
         print_ascii_charts,
     )
     print_ascii_charts(
@@ -45,7 +45,7 @@ def run_step(baseline_score_holistic: float,
 
     # ── Matplotlib PNG (file) ─────────────────────────────────────────────
     try:
-        from examples.offline.sage.demo.helpers.plotter import (
+        from examples.benchmarks.demo.helpers.plotter import (
             plot_results,
         )
         path = plot_results(

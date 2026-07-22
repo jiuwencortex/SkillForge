@@ -1,5 +1,5 @@
 # coding: utf-8
-"""Quick data inspector — edit the CONFIG block and run with `python -m examples.offline.sage.data.tester`.
+"""Quick data inspector — edit the CONFIG block and run with `python -m examples.benchmarks.data.tester`.
 
 CONFIG OPTIONS
 --------------
@@ -41,7 +41,7 @@ def _trunc(text: str, limit) -> str:
 
 
 def main():
-    from examples.offline.sage.data import get_scenario, list_scenarios
+    from examples.benchmarks.data import get_scenario, list_scenarios
 
     # ── Available scenarios ────────────────────────────────────────────────────
     all_names = [s.name for s in list_scenarios()]

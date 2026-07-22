@@ -6,7 +6,7 @@ import json
 import os
 from pathlib import Path
 
-from examples.offline.sage.demo.demo_config import (
+from examples.benchmarks.demo.demo_config import (
     ALL_MODES,
     DemoConfig,
 )

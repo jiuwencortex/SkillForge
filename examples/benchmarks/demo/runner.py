@@ -75,17 +75,17 @@ Uses DeepSeek-Chat (https://api.deepseek.com) by default.  Set your key in
 
 Usage
 -----
-    python -m examples.offline.sage.runner
+    python -m examples.benchmarks.runner
 """
 from __future__ import annotations
 
 import tempfile
 from pathlib import Path
 
-from examples.offline.sage.demo.config_loader import load_config
-from examples.offline.sage.demo.demo import Demo
-from examples.offline.sage.demo.demo_params import DemoParams
-from examples.offline.sage.data import Scenario, get_scenario
+from examples.benchmarks.demo.config_loader import load_config
+from examples.benchmarks.demo.demo import Demo
+from examples.benchmarks.demo.demo_params import DemoParams
+from examples.benchmarks.data import Scenario, get_scenario
 
 if __name__ == "__main__":
     # ── Load config from config.json ──────────────────────────────────────────

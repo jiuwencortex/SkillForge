@@ -1,6 +1,6 @@
 # Skill Recommender — How It Works
 
-**Location**: `examples/offline/sage/skill_recommender/`
+**Location**: `examples/benchmarks/skill_recommender/`
 
 ---
 

@@ -4,8 +4,8 @@ from __future__ import annotations
 # at https://huggingface.co/datasets/gaia-benchmark/GAIA and authenticate once
 # with ``huggingface-cli login``.
 #
-# SAGE limitation: GAIA questions that reference file attachments (PDFs, images,
-# audio, spreadsheets) are filtered out here because SAGE evaluates text-in /
+# SkillForge limitation: GAIA questions that reference file attachments (PDFs, images,
+# audio, spreadsheets) are filtered out here because SkillForge evaluates text-in /
 # text-out skills without tool-use or file access.  On the 2023 validation split
 # ~60-65% of rows are text-only; Level 1 has the highest text-only fraction.
 

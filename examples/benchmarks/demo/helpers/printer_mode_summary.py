@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import List, Optional
 
-from examples.offline.sage.demo.helpers.stats import (
+from examples.benchmarks.demo.helpers.stats import (
     mean,
     std,
 )

@@ -1,4 +1,4 @@
-from examples.offline.sage.demo.helpers.printer_banner import _banner
+from examples.benchmarks.demo.helpers.printer_banner import _banner
 
 
 def _print_skill(label: str, text: str, max_lines: int = 35, console=None) -> None:

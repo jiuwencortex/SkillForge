@@ -12,15 +12,11 @@ Sources supported:
   - "claude-code" → ~/.claude/history.jsonl
 
 Usage:
-    python examples/agent_evolving_hermess/04_dataset_from_external.py
+    python examples/other/offline_02_dataset_from_external.py
 """
 from pathlib import Path
 
-from agent_evolving.offline import (
-    ClaudeCodeImporter,
-    JiuwenSessionImporter,
-    build_dataset_from_external,
-)
+from skillforge.external_importers import ClaudeCodeImporter, JiuwenSessionImporter, build_dataset_from_external
 
 
 def example_mine_sessions():

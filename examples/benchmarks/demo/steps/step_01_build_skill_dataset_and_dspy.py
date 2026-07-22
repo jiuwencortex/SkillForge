@@ -28,10 +28,10 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from examples.offline.sage.demo.helpers.printer_banner import _banner
-from examples.offline.sage.demo.steps.steps_shared_object import \
+from examples.benchmarks.demo.helpers.printer_banner import _banner
+from examples.benchmarks.demo.steps.steps_shared_object import \
     SharedEvolutionObjects
-from agent_evolving.offline import EvolverConfig
+from skillforge.evolvers.skill_evolver_config import EvolverConfig
 from skillforge.evolvers.skill_evolver_stages.stage01_skill_finder_and_loader.skill_finder_and_loader import (
     find_and_load_skill,
 )

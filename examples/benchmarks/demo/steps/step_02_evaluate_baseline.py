@@ -5,10 +5,10 @@ from __future__ import annotations
 from pathlib import Path
 from typing import List, Optional
 
-from examples.offline.sage.demo.steps.steps_shared_object import \
+from examples.benchmarks.demo.steps.steps_shared_object import \
     SharedEvolutionObjects
-from examples.offline.sage.demo.helpers.printer_banner import _banner
-from agent_evolving.offline import EvolverConfig
+from examples.benchmarks.demo.helpers.printer_banner import _banner
+from skillforge.evolvers.skill_evolver_config import EvolverConfig
 from skillforge.evolvers.skill_evolver_stages.stage06_holdout_evaluator.holdout_evaluator import evaluate_baseline_on_holdout
 
 # Modes that require specific baseline pre-evaluations.

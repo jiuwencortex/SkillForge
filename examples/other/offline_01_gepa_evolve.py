@@ -18,10 +18,10 @@ Requirements:
     export OPENAI_API_KEY=...   (or whichever model you configure)
 
 Usage:
-    python examples/agent_evolving_hermess/03_offline_gepa_evolve.py
+    python examples/other/offline_01_gepa_evolve.py
 
     Or via CLI:
-    python -m agent_evolvings.cli \\
+    python -m skillforge \\
         --skill git-review \\
         --iterations 5 \\
         --eval-source synthetic \\
@@ -31,7 +31,8 @@ Usage:
 from pathlib import Path
 
 from skillforge.evolvers.skill_evolver_single_params import SkillEvolverParams
-from agent_evolving.offline import EvolverConfig, evolve_single_skill
+from skillforge.evolvers.skill_evolver_config import EvolverConfig
+from skillforge.evolvers import evolve_single_skill
 from skillforge.evolvers.skill_evolver_prereqs import build_evolution_prereqs
 
 

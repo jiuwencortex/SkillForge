@@ -3,13 +3,13 @@ from __future__ import annotations
 
 from typing import Dict, List, Optional
 
-from examples.offline.sage.demo.helpers.printer_banner import _banner
-from examples.offline.sage.demo.helpers.stats import (
+from examples.benchmarks.demo.helpers.printer_banner import _banner
+from examples.benchmarks.demo.helpers.stats import (
     bootstrap_ci_diff,
     mean,
     std,
 )
-from examples.offline.sage.demo.trainings.results import (
+from examples.benchmarks.demo.trainings.results import (
     run_key_label,
     run_key_mode,
 )

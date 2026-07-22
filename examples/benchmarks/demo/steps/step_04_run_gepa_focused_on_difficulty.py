@@ -1,13 +1,14 @@
 
 from __future__ import annotations
 
-from examples.offline.sage.demo.io.reader_latest_evolved import read_latest_evolved
-from examples.offline.sage.demo.steps.steps_shared_object import \
+from examples.benchmarks.demo.io.reader_latest_evolved import read_latest_evolved
+from examples.benchmarks.demo.steps.steps_shared_object import \
     SharedEvolutionObjects
 from skillforge.evolvers.skill_evolver_single_params import SkillEvolverParams
-from agent_evolving.offline import EvolverConfig, evolve_single_skill
-from examples.offline.sage.demo.helpers.printer_banner import _banner
-from examples.offline.sage.demo.helpers.printer_skill import _print_skill
+from skillforge.evolvers.skill_evolver_config import EvolverConfig
+from skillforge.evolvers import evolve_single_skill
+from examples.benchmarks.demo.helpers.printer_banner import _banner
+from examples.benchmarks.demo.helpers.printer_skill import _print_skill
 
 
 def run_step(shared_evolution_object: SharedEvolutionObjects,

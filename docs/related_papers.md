@@ -91,7 +91,7 @@ workflow domains.
 
 **Relevance to this project:** Utility learning and evidence-gated acceptance
 are closely related to Thompson Sampling skill scheduling and the Bayesian
-acceptance gate in SAGE/GEPA.
+acceptance gate in SkillForge/GEPA.
 
 ---
 
@@ -192,7 +192,7 @@ successful vs. failing rollouts is directly analogous to GEPA's
 scored-candidate mutation strategy.  The three-module Meta-Skill concept
 (what / who / how) mirrors the skill-as-parametric-asset design.  Priority
 scoring via uncertainty × difficulty is a concrete implementation of the
-Thompson Sampling intuition used in SAGE's batch scheduler.
+Thompson Sampling intuition used in SkillForge's batch scheduler.
 
 ---
 
@@ -238,7 +238,7 @@ improve.  Thompson Sampling balances exploration-exploitation in skill
 selection.
 
 **Relevance to this project:** Explicit Thompson Sampling for skill selection
-at Level 1, identical in formulation to SAGE's skill scheduler arm.
+at Level 1, identical in formulation to SkillForge's skill scheduler arm.
 Assertion-driven diagnosis maps to GEPA's contrastive failure reflection.
 
 ---
@@ -258,7 +258,7 @@ WebShop 45.1 % → 61.3 %.  Library transfers across model architectures without
 retraining.
 
 **Relevance to this project:** Skill treated as one of four co-evolving context
-types; pruning and value-based retention mirrors SAGE's Beta-Bernoulli skill
+types; pruning and value-based retention mirrors SkillForge's Beta-Bernoulli skill
 scheduler deprecation logic.
 
 ---
@@ -277,7 +277,7 @@ penalising unnecessary invocations.  Outperforms 16 baselines across 12
 benchmarks.
 
 **Relevance to this project:** Forge-recycle loop evolves the skill/tool
-library on demand; skill value scoring mirrors SAGE's Level 2 trace
+library on demand; skill value scoring mirrors SkillForge's Level 2 trace
 discrimination for identifying high-signal operations.
 
 ---
@@ -295,7 +295,7 @@ continuous task streams.  Decomposes performance gaps into *evolution loss* and
 routing, and human feedback mechanisms.
 
 **Relevance to this project:** Evolution loss / adaptation loss decomposition is
-a useful diagnostic lens for evaluating SAGE runs across skill lifecycle stages.
+a useful diagnostic lens for evaluating SkillForge runs across skill lifecycle stages.
 
 ---
 
@@ -314,8 +314,8 @@ increase and 37.5 % computational cost reduction vs. self-improving baselines
 across 20 agent task families.
 
 **Relevance to this project:** Semantic skill diffs are structurally analogous
-to SAGE's candidate mutations; the federated setting surfaces questions about
-cross-skill knowledge transfer (see SAGE §8.9).
+to SkillForge's candidate mutations; the federated setting surfaces questions about
+cross-skill knowledge transfer (see SkillForge §8.9).
 
 ---
 
@@ -333,7 +333,7 @@ system.  ALFWorld / WebShop / ScienceWorld: average reward +38.0 %,
 execution steps −27.7 %.
 
 **Relevance to this project:** Hierarchical composition with reuse addresses the
-skill portfolio management problem implicit in SAGE's Level 1 scheduler across
+skill portfolio management problem implicit in SkillForge's Level 1 scheduler across
 large enterprise skill catalogs.
 
 ---
@@ -351,7 +351,7 @@ training with theoretical guarantees on error reduction.  ~29 % improvement
 over comparable open-source agents.
 
 **Relevance to this project:** Skill acquisition + validation loop is analogous
-to SAGE's evolutionary search + holdout gate for domain-specific (data science)
+to SkillForge's evolutionary search + holdout gate for domain-specific (data science)
 skills.
 
 ---
@@ -370,7 +370,7 @@ tools, and knowledge — continuous improvement without weight modification.
 
 **Relevance to this project:** Anti-leakage loop (score → skill edit) is
 architecturally identical to GEPA's mutation loop.  Legal domain mirrors
-contract-review synthetic scenario; demonstrates SAGE applicability to regulated
+contract-review synthetic scenario; demonstrates SkillForge applicability to regulated
 domains.
 
 ---
@@ -389,7 +389,7 @@ Internalization converts skill-conditioned trajectories into reward signals for
 real-time policy improvement.  +7 pts on LifelongAgentBench.
 
 **Relevance to this project:** Stage 1 verifier-guided reward is a RL analogue
-of SAGE's holdout gate.  Stage 2 internalization maps to SAGE's Thompson
+of SkillForge's holdout gate.  Stage 2 internalization maps to SkillForge's Thompson
 Sampling posterior update from live deployment telemetry (§4.5 online routing).
 
 ---
@@ -408,7 +408,7 @@ baselines with out-of-distribution task transfer.
 
 **Relevance to this project:** Self-referential skill-as-optimization-target is
 the same architectural move as GEPA.  Pre-training → fine-tuning analogy maps
-to SAGE's burn-in phase before Thompson Sampling pressure engages.
+to SkillForge's burn-in phase before Thompson Sampling pressure engages.
 
 ---
 
@@ -427,8 +427,8 @@ skill contracts (no weight changes).  97.2 % specification compliance with
 < 100 optimization samples.
 
 **Relevance to this project:** Formal verification as acceptance gate is the
-strongest analogue to SAGE's hard per-dimension no-regression constraint (§4.4);
-counterexample-as-textual-gradient is a formal version of SAGE's contrastive
+strongest analogue to SkillForge's hard per-dimension no-regression constraint (§4.4);
+counterexample-as-textual-gradient is a formal version of SkillForge's contrastive
 mutation reflection.
 
 ---
@@ -447,8 +447,8 @@ the agent's own preference judgment to evaluate improvements.  SWE-Bench Pro
 59 % → 78 % with no external grading.
 
 **Relevance to this project:** Self-preference evaluation without labeled data
-is the LLM-judge analogue of SAGE's LLM-as-judge holdout modes; coreset
-selection mirrors SAGE's Level 2 trace discrimination (top-quartile selection).
+is the LLM-judge analogue of SkillForge's LLM-as-judge holdout modes; coreset
+selection mirrors SkillForge's Level 2 trace discrimination (top-quartile selection).
 
 ---
 
@@ -466,8 +466,8 @@ capabilities, creates self-generated practice tasks, and builds self-verificatio
 signals autonomously.
 
 **Relevance to this project:** Self-generated practice tasks are analogous to
-SAGE's synthetic scenario generation mode (Proxy 1 in §5.1).  Cross-backbone
-transfer mirrors SAGE §8.9 cross-task transfer research direction.
+SkillForge's synthetic scenario generation mode (Proxy 1 in §5.1).  Cross-backbone
+transfer mirrors SkillForge §8.9 cross-task transfer research direction.
 
 ---
 
@@ -484,8 +484,8 @@ failures and effective repair patterns.  Skills guide generation of targeted
 repair tasks, validated through execution and scored with alignment-based
 rewards.  50.40 % on SWE-bench Verified after three iterations.
 
-**Relevance to this project:** Trace → skill distillation is the core SAGE
-trajectory mode; alignment-based reward scoring maps to SAGE's fitness metric
+**Relevance to this project:** Trace → skill distillation is the core SkillForge
+trajectory mode; alignment-based reward scoring maps to SkillForge's fitness metric
 family applied to code generation tasks.
 
 ---
@@ -504,10 +504,10 @@ accumulate decisive evidence before committing.  Greedy acceptance commits
 30–42 % false and 10–33 % harmful edits; PACE maintains baseline performance
 when no genuine gains exist.
 
-**Relevance to this project:** PACE is the closest formal analogue to SAGE's
+**Relevance to this project:** PACE is the closest formal analogue to SkillForge's
 Bayesian Acceptance Gate (§4.5) — both replace the naive "higher score → deploy"
 heuristic with a calibrated statistical test.  PACE's e-process testing-by-betting
-and SAGE's Monte Carlo P ≥ 0.75 address the same structural problem from
+and SkillForge's Monte Carlo P ≥ 0.75 address the same structural problem from
 different statistical frameworks (frequentist anytime vs. Bayesian posterior).
 
 ---
@@ -527,8 +527,8 @@ accumulation."  DeepSeek-v4-Flash gains 15–20 pp on SOP-Bench, Lifelong
 AgentBench, and RealFin-Bench.
 
 **Relevance to this project:** Feature-conditioned categorical posterior over
-each skill is a generalisation of SAGE's Beta-Bernoulli conjugate arms.
-"Posterior-guided" optimisation is the same philosophical move as SAGE's
+each skill is a generalisation of SkillForge's Beta-Bernoulli conjugate arms.
+"Posterior-guided" optimisation is the same philosophical move as SkillForge's
 Thompson Sampling resource allocation.
 
 ---
@@ -547,8 +547,8 @@ a skill generator, reducing dependence on external LLMs; context-dependent
 scores handle retrieval and pruning of outdated skills.
 
 **Relevance to this project:** Marginal-value validation before storage is a RL
-analogue of SAGE's holdout gate; pruning via context-dependent scores mirrors
-SAGE's Level 1 arm deprecation for stagnant skills.
+analogue of SkillForge's holdout gate; pruning via context-dependent scores mirrors
+SkillForge's Level 1 arm deprecation for stagnant skills.
 
 ---
 
@@ -566,7 +566,7 @@ on prior decisions.  +15.8 pts on GAIA, +3.2 pts on WebWalkerQA-EN using
 Qwen3.6-35B-A3B.
 
 **Relevance to this project:** Persistent decision history across sessions is
-the same motivation as SAGE's provenance log (§5.5) and inter-run adaptive
+the same motivation as SkillForge's provenance log (§5.5) and inter-run adaptive
 dimension weighting.  GAIA improvement numbers are a useful baseline for any
 future GAIA integration.
 
@@ -586,7 +586,7 @@ feedback via a read-write-assess-govern cycle.  Consistent improvements across
 clinical tasks; cross-model skill transfer demonstrated.
 
 **Relevance to this project:** Three-tier skill repository maps naturally to
-SAGE's population-based search across skill specificity levels.  Medical domain
+SkillForge's population-based search across skill specificity levels.  Medical domain
 extends naturally from the existing `data/hf/pubmedqa/` scenario.
 
 ---
@@ -604,7 +604,7 @@ over unimproved skills.  Closes 47–67 % of the gap to human-authored skills on
 SkillsBench; SpreadsheetBench 16 % → 52 %.
 
 **Relevance to this project:** Four-dimension self-diagnosis maps directly to
-SAGE's rubrics evaluation mode (§4.4) measuring correctness / procedure-following
+SkillForge's rubrics evaluation mode (§4.4) measuring correctness / procedure-following
 / format-adherence / completeness.  SkillsBench results provide a comparison
 point for any future SkillsBench integration.
 
@@ -623,9 +623,9 @@ compression, and (4) reinforcement learning.  Analyses six benchmark categories
 to highlight coverage gaps and missing metrics.
 
 **Relevance to this project:** Reference map of the full field as of June 2026.
-The four paradigms map to SAGE's Layer 1 (execution feedback), Layer 2
+The four paradigms map to SkillForge's Layer 1 (execution feedback), Layer 2
 (trajectory distillation), and Layer 3 (RL / macro evolutionary).  Coverage gap
-analysis is relevant to SAGE §6 evaluation methodology.
+analysis is relevant to SkillForge §6 evaluation methodology.
 
 ---
 
@@ -645,7 +645,7 @@ and document-analysis benchmarks.
 
 **Relevance to this project:** CCE is a training-free variant of GEPA's
 contrastive candidate reflection.  Assessment-augmented refinement on task
-variants is analogous to SAGE's consistency evaluation mode (§4.4).
+variants is analogous to SkillForge's consistency evaluation mode (§4.4).
 
 ---
 
@@ -684,8 +684,8 @@ task constraints.  73.9 % average task reward vs. 40.9 % (no skill) and 56.7 %
 
 **Relevance to this project:** Ground-truth-free evolution directly addresses
 the limitation Skill-MAS flagged (requires ground-truth labels for priority
-scoring).  With-vs-without-skill paired execution mirrors SAGE's trajectory mode
-baseline comparison.  Structural verifier is analogous to SAGE's no-regression
+scoring).  With-vs-without-skill paired execution mirrors SkillForge's trajectory mode
+baseline comparison.  Structural verifier is analogous to SkillForge's no-regression
 constraint without requiring labeled reference outputs.
 
 ---
@@ -705,9 +705,9 @@ relative improvement on AppWorld's hardest split; GPT-4.1 gains 8.7 % on
 tau-bench retail.
 
 **Relevance to this project:** Causal heterogeneity is the exact failure mode
-SAGE's per-dimension no-regression constraint is designed to catch: a skill
+SkillForge's per-dimension no-regression constraint is designed to catch: a skill
 that helps on metric A while hurting metric B should not deploy.  ASSAY's
-randomised masking is a complementary diagnostic to SAGE's rubric-based
+randomised masking is a complementary diagnostic to SkillForge's rubric-based
 regression gate.
 
 ---
@@ -727,8 +727,8 @@ skill repository in real time.  ~98 % API cost reduction vs. full-frame upload.
 Introduces VisualClawArena (200-scenario benchmark).
 
 **Relevance to this project:** Skill database compression and cost-reduction
-techniques are directly applicable to SAGE's computational overhead problem
-(§5.4).  Real-time skill update maps to SAGE's Level 1 online routing posteriors.
+techniques are directly applicable to SkillForge's computational overhead problem
+(§5.4).  Real-time skill update maps to SkillForge's Level 1 online routing posteriors.
 
 ---
 
@@ -745,8 +745,8 @@ CUDA/Triton kernel optimizations and adds them to a dynamically evolving skill
 library.  37.2 % / 70.6 % / 32.2 % on KernelBench L1/L2/L3.
 
 **Relevance to this project:** Validation-before-storage is the same principle
-as SAGE's holdout gate; the three-agent (retrieve / generate / distil) topology
-maps to SAGE's (trace selection / mutation / evaluation) pipeline.  KernelBench
+as SkillForge's holdout gate; the three-agent (retrieve / generate / distil) topology
+maps to SkillForge's (trace selection / mutation / evaluation) pipeline.  KernelBench
 results are the strongest published baseline for the KernelBench scenario
 investigated in this project.
 
@@ -766,10 +766,10 @@ skill assets and manages the complete skill lifecycle: importing, developing,
 exploring with source tracking, oversight, and refinement from execution
 outcomes.
 
-**Relevance to this project:** SkillWiki is the infrastructure layer SAGE
+**Relevance to this project:** SkillWiki is the infrastructure layer SkillForge
 assumes exists but does not itself provide.  Evidence-linked skill assets and
-source tracking map to SAGE's provenance log design (§5.5).  The governance
-lifecycle mirrors the SAGE deployment cadence (§5.4).
+source tracking map to SkillForge's provenance log design (§5.5).  The governance
+lifecycle mirrors the SkillForge deployment cadence (§5.4).
 
 ---
 
@@ -787,9 +787,9 @@ test-time evolution."  OPD-Evolver-9B achieves up to 11.5 % performance gains
 over comparable memory-augmented systems.
 
 **Relevance to this project:** Fast/slow evolutionary loop split maps directly
-to SAGE's Layer 2 (per-epoch directed maintenance) + Layer 3 (periodic macro
+to SkillForge's Layer 2 (per-epoch directed maintenance) + Layer 3 (periodic macro
 rewrite) architecture.  Outcome-calibrated memory attribution is a finer-grained
-version of SAGE's Level 2 Beta-Bernoulli trace arm tracking.
+version of SkillForge's Level 2 Beta-Bernoulli trace arm tracking.
 
 ---
 
@@ -1034,7 +1034,7 @@ def load(n: int = 50, seed: int = 42):
 
 ## Paper Analysis — Relevance, Importance, and Benchmark Comparisons
 
-Reference section for positioning SAGE against the field.  Covers all 36
+Reference section for positioning SkillForge against the field.  Covers all 36
 papers across three dimensions.
 
 **Caveat on importance ratings:** All papers in this file are from 2025–2026
@@ -1046,7 +1046,7 @@ affiliation, peer-reviewed venue acceptance, and known authors.
 
 ### Rating scales
 
-**Relevance to SAGE** (1–5) — specifically *improving an existing skill
+**Relevance to SkillForge** (1–5) — specifically *improving an existing skill
 document*, not creating skills from scratch:
 
 - 5 = Core focus is iteratively improving an existing skill text
@@ -1114,11 +1114,11 @@ document*, not creating skills from scratch:
 
 ---
 
-### Relevance ranking (top tier for SAGE positioning)
+### Relevance ranking (top tier for SkillForge positioning)
 
 Papers with relevance 5/5 — all directly improve an existing skill document:
 
-| Paper | arXiv | Key differentiator vs. SAGE |
+| Paper | arXiv | Key differentiator vs. SkillForge |
 |---|---|---|
 | SkillOpt | 2605.23904 | Text-space optimizer; closest ancestor of GEPA |
 | SkillEvolver | 2605.10500 | Meta-skill governs the refinement loop; SkillsBench baseline |
@@ -1132,30 +1132,30 @@ Papers with relevance 5/5 — all directly improve an existing skill document:
 
 ---
 
-### Benchmark connectivity — how to anchor SAGE comparisons
+### Benchmark connectivity — how to anchor SkillForge comparisons
 
-The following chain of papers share benchmarks, allowing SAGE to be
+The following chain of papers share benchmarks, allowing SkillForge to be
 positioned transitively even without running every benchmark:
 
 **SkillsBench chain:**
 SkillEvolver (56.8 %) → SkillAxe (closes 47–67 % gap to human) →
-daVinci-kernel → SAGE (if integrated)
+daVinci-kernel → SkillForge (if integrated)
 
 **KernelBench chain:**
 SkillEvolver (1.51× speedup, 3 tasks) → daVinci-kernel (37.2/70.6/32.2 %
-on L1/L2/L3) → SAGE (if GPU available)
+on L1/L2/L3) → SkillForge (if GPU available)
 
 **SWE-bench chain:**
 Socratic-SWE (50.40 % SWE-bench Verified, 3 iterations) →
-RHO (SWE-Bench Pro 59 % → 78 %) → SAGE (if code scenario added)
+RHO (SWE-Bench Pro 59 % → 78 %) → SkillForge (if code scenario added)
 
 **GAIA chain:**
 SkillHone (+15.8 pts over commercial deep-research) →
-EvoArena/EvoMem (+6.1 % on GAIA) → SAGE (recommended for integration)
+EvoArena/EvoMem (+6.1 % on GAIA) → SkillForge (recommended for integration)
 
 **ALFWorld / WebShop chain:**
 UCE (ALFWorld 75→96 %, WebShop 45→61 %) →
-SkillPyramid (+38 % avg reward, −27.7 % steps) → SAGE (if env available)
+SkillPyramid (+38 % avg reward, −27.7 % steps) → SkillForge (if env available)
 
 **Closed comparison pairs** (papers that explicitly compare to each other):
 - SkillAudit directly compares to SkillOpt and SkillEvolver
@@ -1163,32 +1163,32 @@ SkillPyramid (+38 % avg reward, −27.7 % steps) → SAGE (if env available)
 - SkillAxe directly compares to SkillEvolver
 - daVinci-kernel directly compares to SkillEvolver
 
-These four papers provide the tightest baseline chain for SAGE:
-SkillEvolver is the common reference, and any SAGE result on SkillsBench,
+These four papers provide the tightest baseline chain for SkillForge:
+SkillEvolver is the common reference, and any SkillForge result on SkillsBench,
 KernelBench, or the held-out domain tasks can be directly positioned
 against all four.
 
 ---
 
-### Top 5 papers to read in depth for SAGE positioning
+### Top 5 papers to read in depth for SkillForge positioning
 
 | Priority | Paper | arXiv | Why |
 |---|---|---|---|
 | 1 | **SkillAudit** | 2606.14239 | Ground-truth-free; solves Skill-MAS's stated limitation; closest methodological competitor; compares directly to SkillOpt + SkillEvolver |
-| 2 | **SkillAxe** | 2606.10546 | Gulwani (Microsoft); SkillsBench + SpreadsheetBench; four-dimension self-diagnosis is most comparable to SAGE's rubrics mode |
-| 3 | **Bayesian-Agent** | 2606.08348 | Parallel design to SAGE's Thompson Sampling; if community picks this up, SAGE's scheduler needs clear differentiation |
-| 4 | **PACE** | 2606.08106 | Directly attacks the acceptance gate problem — SAGE's Bayesian gate is the alternative answer from a different statistical family |
-| 5 | **SkillCAT** | 2606.13317 | Training-free, up to 40 %; explicitly compares to SkillGen and SkillEvolver, the same chain SAGE sits in |
+| 2 | **SkillAxe** | 2606.10546 | Gulwani (Microsoft); SkillsBench + SpreadsheetBench; four-dimension self-diagnosis is most comparable to SkillForge's rubrics mode |
+| 3 | **Bayesian-Agent** | 2606.08348 | Parallel design to SkillForge's Thompson Sampling; if community picks this up, SkillForge's scheduler needs clear differentiation |
+| 4 | **PACE** | 2606.08106 | Directly attacks the acceptance gate problem — SkillForge's Bayesian gate is the alternative answer from a different statistical family |
+| 5 | **SkillCAT** | 2606.13317 | Training-free, up to 40 %; explicitly compares to SkillGen and SkillEvolver, the same chain SkillForge sits in |
 
 ---
 
-### Papers not worth prioritising for SAGE comparison
+### Papers not worth prioritising for SkillForge comparison
 
 | Paper | Reason |
 |---|---|
 | MUSE-Autoskill | Insufficient documentation; benchmarks unknown |
 | MetaForge | Skill creation / tool forging, not improvement of existing text skill |
-| Adaptive Auto-Harness | Diagnostic framework; no comparable benchmark to SAGE's scenarios |
+| Adaptive Auto-Harness | Diagnostic framework; no comparable benchmark to SkillForge's scenarios |
 | OpenSkill | Creation from scratch in open world; minimal improvement loop |
 | EvoArena / EvoMem | Benchmark + memory evolution; not skill improvement |
 | SkillWiki | Infrastructure paper; no performance comparison |
