@@ -23,12 +23,12 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from .skill_evolver_stages.stage02_skill_constraint_validator.skill_constraint_validator import validate_skill_constraints
-from .skill_evolver_stages.stage05_gepa_optimizer.gepa_optimizer_runner import run_gepa_optimization
-from .skill_evolver_stages.stage06_holdout_evaluator.holdout_evaluator import evaluate_on_holdout
-from .skill_evolver_stages.stage07_acceptance_gates.gates_applier import apply_acceptance_gates
-from .skill_evolver_stages.stage08_results_display.results_displayer import display_results_table
-from .skill_evolver_stages.stage09_output_saver.output_saver import save_outputs
+from .stages.stage02_skill_constraint_validator.skill_constraint_validator import validate_skill_constraints
+from .stages.stage05_gepa_optimizer.gepa_optimizer_runner import run_gepa_optimization
+from .stages.stage06_holdout_evaluator.holdout_evaluator import evaluate_on_holdout
+from .stages.stage07_acceptance_gates.gates_applier import apply_acceptance_gates
+from .stages.stage08_results_display.results_displayer import display_results_table
+from .stages.stage09_output_saver.output_saver import save_outputs
 from .skill_evolver_single_params import SkillEvolverParams
 
 

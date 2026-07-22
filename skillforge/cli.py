@@ -21,12 +21,12 @@ from typing import Optional
 
 import click
 
-from agent_evolving.offline import evolve_single_skill, evolve_skills_batch
+from skillforge.evolvers import evolve_single_skill, evolve_skills_batch
 from skillforge.evolvers.skill_evolver_config import EvolverConfig
 from skillforge.evolvers.skill_evolver_prereqs import build_evolution_prereqs
-from agent_evolving.online import skill_list
-from .skill_evolver_single_params import SkillEvolverParams
-from .skill_evolver_stages.stage02_skill_constraint_validator.constraint_validator import ConstraintValidator
+from skillforge.evolvers.skill_evolver_single_params import SkillEvolverParams
+from skillforge.evolvers.stages.stage02_skill_constraint_validator.constraint_validator import ConstraintValidator
+from skillforge.skills.skill_lister import skill_list
 
 
 def _make_config(
